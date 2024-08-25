@@ -1,0 +1,240 @@
+
+.banner {
+    background-image: url('https://storage.googleapis.com/pr-newsroom-wp/1/2023/12/Generic-FTR-headers_V10-1920x733.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 300px; 
+    width: 100%; 
+}
+
+/* Misión y Visión */
+.mission-vision-section {
+    padding: 60px 0; 
+    color: #333; 
+}
+
+.mission-vision-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mission-vision-section p {
+    font-size: 18px;
+    max-width: 80%;
+    margin: 0 auto; 
+}
+
+
+.social-icons-container {
+    margin-top: 20px;
+}
+
+/*redes sociales */
+.social-icon {
+    width: 40px;  /* Ancho fijo */
+    height: 40px; /* Altura fija */
+    margin: 0 10px; /* Espaciado entre íconos */
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); 
+}
+
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Regular.woff2') format('woff2'),
+         url('fonts/Gotham-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Bold.woff2') format('woff2'),
+         url('fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Gotham', sans-serif;
+}
+
+/* barra de navegación */
+.navbar {
+    background-color: #1DB954; 
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #121212; 
+    background-color: #fff;
+    border-radius: 4px; 
+    padding: 5px 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+/* Icono de toggle del menú */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%281255255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Animación de desvanecimiento para el banner */
+.banner {
+    animation: fadeInBanner 2s ease-in-out;
+}
+
+@keyframes fadeInBanner {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* textos */
+.mission-vision {
+    animation: slideInText 2s ease-in-out;
+}
+
+@keyframes slideInText {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.banner-video {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+/*productos */
+
+.products {
+    padding: 50px 0;
+    background-color: #f8f9fa; 
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    color: #121212;
+    font-weight: bold;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1DB954; 
+}
+
+.product-card p {
+    color: #6c757d;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* contacto */
+
+.contact-banner {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/3172566/pexels-photo-3172566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta a la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-form .form-group label {
+    color: #fff;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.contact-form .btn-primary {
+    background-color: #1DB954; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #17a44b; 
+}
